@@ -67,15 +67,24 @@
             class="navbar-nav mr-auto d-flex justify-content-center align-items-center"
           >
             <button class="btn btn-info sub-btn">
-                <a class="text-white" href="/pages/Contact.html"> SUBSCRIBE </a>
+              <a class="text-white" href="/pages/Contact.html"> SUBSCRIBE </a>
             </button>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="news-section text-dark">
-        Contact form will be here
-    </div>
+
+    <!--Section: Contact v.2-->
+    <form action="https://formsubmit.co/kushalraut5@gmail.com" method="POST">
+      <input type="email" name="email" placeholder="Email Address" />
+      <input
+        type="hidden"
+        name="_next"
+        value="https://football/thanks.html"
+      />
+      <input type="text" name="name" placeholder="Message" required />
+      <button type="submit">Send</button>
+    </form>
 
     <!-- Footer -->
     <footer class="page-footer">
