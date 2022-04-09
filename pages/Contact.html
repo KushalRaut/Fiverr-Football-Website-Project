@@ -75,16 +75,32 @@
     </nav>
 
     <!--Section: Contact v.2-->
-    <form action="https://formsubmit.co/0189cf8457d15c6a9ae3b8d096ac0e17" method="POST">
-      <input type="email" name="email" placeholder="Email Address" />
-      <input
-        type="hidden"
-        name="_next"
-        value="https://spontaneous-cassata-9f8d6a.netlify.app/pages/thankyou"
-      />
-      <input type="text" name="name" placeholder="Message" required />
-      <button type="submit">Send</button>
-    </form>
+    <div class="form-section">
+      <div class="form-container">
+        <form
+          action="https://formsubmit.co/6428e3ef18d1241f6aef4cf725beca46"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_next"
+            value="https://spontaneous-cassata-9f8d6a.netlify.app/pages/thankyou"
+          />
+          <input type="hidden" name="_subject" value="New submission!" class="form-item"/>
+          <input type="hidden" name="_captcha" value="false" class="form-item"/>
+          <input type="text" name="First Name" placeholder="First Name" class="form-item"/>
+          <input type="text" name="Last Name" placeholder="Last Name" class="form-message"/><br />
+          <input type="email" name="Email" placeholder="Email Address" class="form-item"/>
+          <input
+            type="text"
+            name="Phone No."
+            placeholder="Phone Number"
+          /><br />
+          <input type="text" name="body" placeholder="Message" required /><br />
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="page-footer">
