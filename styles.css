@@ -423,32 +423,29 @@
   color: white;
 }
 
-
-  @media only screen and (max-width: 600px) {
-    .form-header {
-      font-size: 1.35rem;
-      text-align: center;
-    }
-    .form-container {
-      
-    }
-    .form-item {
-      width: 100%;
-      margin: 2px 0;
-    }
-    .form-message {
-      width: 100%;
-      margin: 2px 0;
-    }
-    .submit-btn {
-      font-size: 14px;
-      height: 30px;
-    }
-  
+@media only screen and (max-width: 600px) {
+  .form-header {
+    font-size: 1.35rem;
+    text-align: center;
   }
+  .form-container {
+  }
+  .form-item {
+    width: 100%;
+    margin: 2px 0;
+  }
+  .form-message {
+    width: 100%;
+    margin: 2px 0;
+  }
+  .submit-btn {
+    font-size: 14px;
+    height: 30px;
+  }
+}
 
-  /* Match Section CSS */
-.match-section{
+/* Match Section CSS */
+.match-section {
   min-height: 90vh;
   display: flex;
   justify-content: center;
@@ -459,15 +456,15 @@
   padding-top: 1rem;
 }
 
-.match-container{
+.match-container {
   width: 65%;
-  border:2px solid #007476;
+  border: 2px solid #007476;
   border-radius: 5px;
   padding: 8px;
   height: auto;
   margin-bottom: 8px;
 }
-.match-category{
+.match-category {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
@@ -477,7 +474,7 @@
   color: #005455;
 }
 
-.match-header{
+.match-header {
   font-size: 1rem;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
@@ -486,13 +483,13 @@
   font-weight: 700;
   color: #001455;
 }
-.stadium-info{
+.stadium-info {
   font-size: 0.9rem;
   font-weight: normal;
   font-family: 'Roboto', sans-serif;
 }
 
-.team-name{
+.team-name {
   font-size: 1.2rem;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
@@ -502,53 +499,178 @@
   color: black;
 }
 
-.match-team-logo{
+.match-team-logo {
   width: 50px;
   height: 50px;
   object-fit: contain;
 }
 
-.date{
+.date {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.month{
+.month {
   font-size: 1rem;
   font-weight: 600;
 }
 
-.book-tickets{
+.book-tickets {
   padding: 0 !important;
   margin: 0 !important;
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-
 @media only screen and (max-width: 600px) {
-  .match-container{
+  .match-container {
     width: 95%;
   }
-  .match-category{
+  .match-category {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
 
-  .match-team-logo{
+  .match-team-logo {
     width: 35px;
     height: 35px;
     object-fit: contain;
   }
 
-  .team-name{
+  .team-name {
     font-size: 0.8rem;
     margin: 0.3rem;
   }
 
-  .date{
+  .date {
     font-size: 1.1rem;
     font-weight: 600;
   }
+}
 
+/* Terms and Conditions Css */
+.tnc-section {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tnc-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.tnc-header {
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #005455;
+  align-self: flex-start;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.hr-line {
+  color: #005455;
+  height: 5px;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.terms-img {
+  width: 30%;
+  height: auto;
+  margin: 1rem;
+}
+
+.tnc-content {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #005455;
+  justify-self: flex-start;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .tnc-container {
+    width: 95%;
+  }
+  .tnc-header {
+    font-size: 1.8rem;
+  }
+  .tnc-content {
+    font-size: 1rem;
+  }
+  .company-name {
+    font-size: 1rem;
+  }
+  .tnc-image{
+    width: 100%;
+  }
+}
+
+/* Copyright Section Css */
+.copyright-section {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+.cc-img {
+  width: 70%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .copyright-section{
+    padding: 1.5rem;
+  }
+}
+
+/* Thank you css */
+.ty-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  min-height: 80vh;
+}
+
+.done-img{
+  width: 300px;
+  height: auto;
+  margin: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .done-img{
+    width: 200px;
+  }
 }
