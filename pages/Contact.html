@@ -77,6 +77,7 @@
     <!--Section: Contact v.2-->
     <div class="form-section">
       <div class="form-container">
+        <h1 class="form-header">Connect With Us!!!</h1>
         <form
           action="https://formsubmit.co/3b98ef2f8dc81338e2646772a3571bec"
           method="POST"
@@ -87,16 +88,18 @@
             value="https://spontaneous-cassata-9f8d6a.netlify.app/pages/thankyou"
           />
           <input type="hidden" name="_subject" value="New submission!" class="form-item"/>
-          <input type="hidden" name="_captcha" value="false" class="form-item"/>
-          <input type="text" name="First Name" placeholder="First Name" class="form-item"/>
-          <input type="text" name="Last Name" placeholder="Last Name" class="form-message"/><br />
-          <input type="email" name="Email" placeholder="Email Address" class="form-item"/>
+          <input type="hidden" name="_captcha" value="false" class="form-item" required/>
+          <input type="text" name="First Name" placeholder="First Name" class="form-item" required/>
+          <input type="text" name="Last Name" placeholder="Last Name" class="form-item" required/><br />
+          <input type="email" name="Email" placeholder="Email Address" class="form-item" required/>
           <input
             type="text"
             name="Phone No."
             placeholder="Phone Number"
+            class="form-item"
+            required
           /><br />
-          <input type="text" name="body" placeholder="Message" required /><br />
+          <input type="text" name="body" placeholder="Message" class="form-message" required /><br />
           <button type="submit" class="submit-btn">Send</button>
         </form>
       </div>

@@ -365,6 +365,15 @@
   align-items: center;
 }
 
+.form-header {
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -376,4 +385,170 @@
   padding: 2rem;
   border-radius: 5px;
   color: white;
+}
+
+.form-item {
+  margin: 4px;
+  border-radius: 7px;
+  border: 2px solid #464b4b6c;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  height: 33px;
+}
+
+.form-message {
+  margin: 4px;
+  border-radius: 7px;
+  border: 2px solid #464b4b6c;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  height: 66px;
+  width: 98%;
+}
+
+.submit-btn {
+  margin: 4px;
+  border-radius: 7px;
+  border: 2px solid #464b4b6c;
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 33px;
+  width: 50%;
+  background-color: #00c851;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #288f51;
+  color: white;
+}
+
+
+  @media only screen and (max-width: 600px) {
+    .form-header {
+      font-size: 1.35rem;
+      text-align: center;
+    }
+    .form-container {
+      
+    }
+    .form-item {
+      width: 100%;
+      margin: 2px 0;
+    }
+    .form-message {
+      width: 100%;
+      margin: 2px 0;
+    }
+    .submit-btn {
+      font-size: 14px;
+      height: 30px;
+    }
+  
+  }
+
+  /* Match Section CSS */
+.match-section{
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  padding-top: 1rem;
+}
+
+.match-container{
+  width: 65%;
+  border:2px solid #007476;
+  border-radius: 5px;
+  padding: 8px;
+  height: auto;
+  margin-bottom: 8px;
+}
+.match-category{
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #005455;
+}
+
+.match-header{
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #001455;
+}
+.stadium-info{
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+.team-name{
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+}
+
+.match-team-logo{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.date{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.month{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.book-tickets{
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .match-container{
+    width: 95%;
+  }
+  .match-category{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .match-team-logo{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+  }
+
+  .team-name{
+    font-size: 0.8rem;
+    margin: 0.3rem;
+  }
+
+  .date{
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
 }
